@@ -1,0 +1,19 @@
+.blog-detail {
+  min-height: 100vh;
+  padding: 20px;
+ 
+}
+
+.blog-actions {
+  margin-top: 20px;
+}
+
+.blog-actions button {
+  margin-right: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #5bc0de;
+  cursor: pointer;
+}

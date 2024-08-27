@@ -1,0 +1,45 @@
+.blog-form {
+  max-width: 600px;
+  margin: 20px 0px 0px 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  height: 100vh;
+}
+
+.blog-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.blog-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.blog-form input[type="text"],
+.blog-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.blog-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #5bc0de;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}

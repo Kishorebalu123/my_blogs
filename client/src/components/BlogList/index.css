@@ -1,0 +1,27 @@
+.blog-list {
+  min-height: 100vh;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.blog-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.blog-item h2 {
+  margin-top: 0;
+  color:black;
+}
+.blog-item p {
+
+  color:gray;
+}
+
+
+.blog-item a {
+  text-decoration: none;
+  color: #5bc0de;
+}
