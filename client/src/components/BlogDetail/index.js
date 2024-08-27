@@ -15,7 +15,7 @@ const BlogDetail = () => {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const response = await fetch(`https://my-blogs-4dzo.onrender.com/posts/${id}`,{
+                const response = await fetch(`https://my-blogs-00jp.onrender.com/posts/${id}`,{
                     method: 'GET',
                     headers: {
                         Authorization: `Bearer ${jwtToken}`,
@@ -37,7 +37,7 @@ const BlogDetail = () => {
 
     const handleDelete = async () => {
         try {
-            const response =await fetch(`https://my-blogs-4dzo.onrender.com/posts/${id}`, {
+            const response =await fetch(`https://my-blogs-00jp.onrender.com/posts/${id}`, {
                 method: 'DELETE',
                 headers: {
                     Authorization: `Bearer ${jwtToken}`,

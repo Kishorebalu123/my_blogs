@@ -40,7 +40,7 @@ const RegisterForm = () => {
    e.preventDefault();
    try {
    const {username,password}=form
-   const url=' https://my-blogs-4dzo.onrender.com/auth/register'
+   const url='https://my-blogs-00jp.onrender.com/auth/register'
    const options={
        method: 'POST',
        headers: {

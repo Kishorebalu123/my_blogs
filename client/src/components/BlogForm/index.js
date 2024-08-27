@@ -21,7 +21,7 @@ const BlogForm = () => {
          
                 try {
                     const jwtToken=Cookies.get('jwt_token')
-                    const response = await fetch(`https://my-blogs-4dzo.onrender.com/posts/${id}`,{
+                    const response = await fetch(`https://my-blogs-00jp.onrender.com/posts/${id}`,{
                         method:'GET',
                         headers:{
             
@@ -56,7 +56,7 @@ const BlogForm = () => {
 
         try {
             const method = id ? 'PUT' : 'POST';
-            const url = id ? `https://my-blogs-4dzo.onrender.com/posts/${id}` : 'https://my-blogs-4dzo.onrender.com/posts';
+            const url = id ? `https://my-blogs-00jp.onrender.com/posts/${id}` : 'https://my-blogs-00jp.onrender.com/posts';
             const response = await fetch(url, {
                 method,
                 headers: {

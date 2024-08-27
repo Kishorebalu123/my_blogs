@@ -25,7 +25,7 @@ const BlogList = () => {
         const fetchBlogs = async () => {
            
            
-            const response = await fetch(` https://my-blogs-4dzo.onrender.com/posts`,{
+            const response = await fetch(`https://my-blogs-00jp.onrender.com/posts`,{
                 method: 'GET',
                 headers: {
                     Authorization: `Bearer ${jwtToken}`,
