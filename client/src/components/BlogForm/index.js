@@ -21,9 +21,10 @@ const BlogForm = () => {
          
                 try {
                     const jwtToken=Cookies.get('jwt_token')
-                    const response = await fetch(`http://localhost:5000/posts/${id}`,{
+                    const response = await fetch(`https://my-blogs-4dzo.onrender.com/posts/${id}`,{
+                        method:'GET',
                         headers:{
-                            method:"GET",
+            
                            Authorization: `Bearer ${jwtToken}`
                         }
                     });
@@ -44,8 +45,9 @@ const BlogForm = () => {
     }, [id]);
 
     const handleSubmit = async (e) => {
-        const jwtToken=Cookies.get('jwt_token')
         e.preventDefault();
+        const jwtToken=Cookies.get('jwt_token')
+     
         const blogData = {
             title: title || undefined,
             excerpt: excerpt || undefined,
@@ -54,7 +56,7 @@ const BlogForm = () => {
 
         try {
             const method = id ? 'PUT' : 'POST';
-            const url = id ? `http://localhost:5000/posts/${id}` : 'http://localhost:5000/posts';
+            const url = id ? `https://my-blogs-4dzo.onrender.com/posts/${id}` : 'https://my-blogs-4dzo.onrender.com/posts';
             const response = await fetch(url, {
                 method,
                 headers: {

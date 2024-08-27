@@ -12,7 +12,7 @@ const CommentSection = ({ blogId }) => {
         const fetchComments = async () => {
             const jwtToken =Cookies.get('jwt_token')
   
-            const response = await fetch(`http://localhost:5000/posts/${blogId}/comments`,{
+            const response = await fetch(`https://my-blogs-4dzo.onrender.com/posts/${blogId}/comments`,{
              method: 'GET',
                 headers: {
                    
@@ -30,7 +30,7 @@ const CommentSection = ({ blogId }) => {
   
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:5000/posts/${blogId}/comments`, {
+            const response = await fetch(`https://my-blogs-4dzo.onrender.com/posts/${blogId}/comments`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

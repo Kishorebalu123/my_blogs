@@ -45,7 +45,7 @@ const LoginForm = () => {
   const submitForm = async event => {
     event.preventDefault()
     const userDetails = { username, password }
-    const url = 'http://localhost:5000/auth/login'
+    const url = ' https://my-blogs-4dzo.onrender.com/auth/login'
     const options = {
       
       method: 'POST',

@@ -5,12 +5,13 @@ import Header from '../Header'
 import Footer from '../Footer'
 import './index.css';
 
-const jwtToken=Cookies.get('jwt_token')
+
 
 
 const BlogList = () => {
     const [blogs, setBlogs] = useState([]);
     const navigate=useNavigate()
+    const jwtToken=Cookies.get('jwt_token')
 
     useEffect(()=>{
 
@@ -18,13 +19,13 @@ const BlogList = () => {
           navigate('/login',{replace:true})
         }  
       
-      })
+      },[jwtToken,navigate])
 
     useEffect(() => {
         const fetchBlogs = async () => {
            
-
-            const response = await fetch(`http://localhost:5000/posts`,{
+           
+            const response = await fetch(` https://my-blogs-4dzo.onrender.com/posts`,{
                 method: 'GET',
                 headers: {
                     Authorization: `Bearer ${jwtToken}`,
@@ -33,8 +34,11 @@ const BlogList = () => {
             const data = await response.json();
             setBlogs(data);
         };
-        fetchBlogs();
-    }, []);
+        if (jwtToken) { 
+            fetchBlogs();
+        }
+    }, [jwtToken]);
+
 
     return (
         <>
