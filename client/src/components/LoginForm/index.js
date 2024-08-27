@@ -1,6 +1,6 @@
 import { useState ,useEffect } from 'react'
 import Cookies from 'js-cookie'
-import { useNavigate,Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 import './index.css'
 
@@ -114,10 +114,7 @@ const LoginForm = () => {
         <button type="submit" className="login-button">
           Login
         </button>
-     <Link to="/register">   <button type="button" className="signup-btn">
-          Sign Up
-        </button>
-        </Link>
+   
         {showSubmitError && <p className="error-message">*{errorMsg}</p>}
       </form>
     </div>
