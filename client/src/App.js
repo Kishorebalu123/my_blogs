@@ -5,7 +5,7 @@ import BlogDetail from './components/BlogDetail';
 import BlogForm from './components/BlogForm';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
-//import SearchBar from './components/SearchBar';
+import NotFound from './components/NotFound'; 
 
 import './App.css'
 
@@ -19,6 +19,7 @@ const App = () => {
                         <Route path="/blogs/:id" element={<BlogDetail/>} />
                         <Route path="/create" element={<BlogForm/>} />
                        <Route path="/edit/:id" element={<BlogForm/>} />
+                       <Route path="*" element={<NotFound />} />
                     </Routes>
                 
                
